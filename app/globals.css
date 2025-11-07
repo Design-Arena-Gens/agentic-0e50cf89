@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #5E17EB;
+  --secondary: #6F2FEE;
+  --dark: #0A0A0F;
+  --darker: #050508;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--darker);
+  color: white;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #6F2FEE 0%, #5E17EB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 40px rgba(94, 23, 235, 0.3);
+  }
+
+  .card-glow {
+    box-shadow: 0 8px 32px rgba(94, 23, 235, 0.15);
+  }
+}
